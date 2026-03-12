@@ -1,0 +1,114 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Body background */
+body{
+  background:#00f2fe;
+  padding:20px;
+}
+
+/* Title */
+h1{
+  text-align:center;
+  margin-bottom:20px;
+  color:#002b36;
+}
+
+/* INPUT ROW */
+.text{
+  width:75%;
+  padding:12px;
+  border:none;
+  border-radius:6px;
+  margin-right:2%;
+}
+
+.time{
+  width:23%;
+  padding:12px;
+  border:none;
+  border-radius:6px;
+}
+
+/* ADD BUTTON */
+button{
+  width:70%;
+  margin-left:15% ;
+  padding:12px;
+  margin-top:12px;
+  border:none;
+  border-radius:6px;
+  background:#002b36;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#00171c;
+}
+
+/* LIST */
+.list{
+  margin-top:20px;
+  padding-left: 10px;
+  margin-right:10px ;
+}
+
+/* TASK ROW */
+.list li{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:white;
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:8px;
+  list-style-position: inside;
+}
+
+/* task text */
+.list li span:first-child{
+  flex:1;
+}
+
+/* time */
+.list li span:nth-child(2){
+  width:70px;
+  text-align:center;
+  color:#555;
+}
+
+/* buttons inside li */
+.list li button{
+  width:auto;
+  margin-left:6px;
+  padding:6px 10px;
+  font-size:13px;
+}
+
+/* delete */
+.list li button:first-of-type{
+  background:#ff4d4d;
+}
+
+/* edit */
+.list li button:last-of-type{
+  background:#2ecc71;
+}
+
+/* mobile */
+@media(max-width:480px){
+  .text{
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .time{
+    width:100%;
+  }
+}
